@@ -21,19 +21,18 @@ body {
 
 #board {
     width: 480px;
-    margin: 60px auto; /* Adjusted margin to move the board down */
+    margin: 0 auto;
     background: #ccc;
     border: 25px solid #0000ff !important; /* Dark Blue border with !important */
     border-radius: 10px;
-    box-shadow: inset -1px 1px 7px rgba(0,0,0,.2), 
-                inset 1px -1px 7px rgba(0,0,0,.2), 
-                1px 12px 5px rgba(0,0,0,.4), 
-                4px 3px 8px rgba(0,0,0,.4), 
-                5px 10px 10px rgba(0,0,0,.2), 
+    box-shadow: inset -1px 1px 7px rgba(0,0,0,.2),
+                inset 1px -1px 7px rgba(0,0,0,.2),
+                1px 12px 5px rgba(0,0,0,.4),
+                4px 3px 8px rgba(0,0,0,.4),
+                5px 10px 10px rgba(0,0,0,.2),
                 -5px 10px 10px rgba(0,0,0,.4);
 }
 
-/* Game Styles */
 #game {
 
 }
@@ -51,23 +50,6 @@ body {
     line-height: 60px;
     font-size: 50px;
     cursor: default;
-}
-
-/* Set the background color for even and odd rows of squares */
-.row:nth-child(odd) .box:nth-child(odd) {
-    background-color: #7FFFD4; /* Light Blue */
-}
-
-.row:nth-child(odd) .box:nth-child(even) {
-    background-color: white;
-}
-
-.row:nth-child(even) .box:nth-child(odd) {
-    background-color: white;
-}
-
-.row:nth-child(even) .box:nth-child(even) {
-    background-color: #7FFFD4; /* Light Blue */
 }
 
 .placed {
@@ -90,7 +72,8 @@ body {
     cursor: pointer;
 }
 
-/* Result Styles */
+/*============================================*/
+
 #result {
     width: 480px;
     height: 480px;
@@ -326,4 +309,3 @@ body {
         line-height: 320px;
     }
 }
-
